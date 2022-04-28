@@ -1,4 +1,4 @@
 # Personal-Website
 Website created using HTML, CSS and JavaScript
 
-[Image](./img/website.png)
+![Image](https://github.com/abhayp2204/Personal-Website/blob/main/img/website.png)
