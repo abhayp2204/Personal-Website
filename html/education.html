@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body id="blackbody">
+    <header>
+        <div class="wrapper">
+            <!-- Synchronize -->
+            <div class="logo">
+                <a id="a0" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="#">Synchronize</a>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <a class="navbutton" id="a1" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="index.html" target="_blank">Home</a>
+                <a class="navbutton" id="a2" onmouseover="changeColor(id)" onmouseout="restoreColor(id)"  href="achievements.html" target="_blank">Achievements</a>
+                <a class="navbutton" id="a3" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="skills.html" target="_blank">Skills</a>
+                <a class="navbutton" id="a4" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="contact.html" target="_blank">Contact</a>
+                <a class="navbutton" id="a5" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="">Education</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <h1 id="edu">Education</h1>
+    <br>
+    <div class="cards">
+        <!-- <p>School</p> -->
+        <!-- <p>College</p> -->
+        <!-- <p>University</p> -->
+        
+        <button onclick="flipSchool()" class="flip"><span id="fSchool">School</span></button><br><br>
+        <button onclick="flipCollege()" class="flip"><span id="fCollege">College</span></button><br><br>
+        <button onclick="flipUni()" class="flip"><span id="fUni">University</span></button><br><br>
+        <button onclick="flipCourse1()" class="flip"><span id="fCourse1">Course 1</span></button><br><br>
+        <button onclick="flipCourse2()" class="flip"><span id="fCourse2">Course 2</span></button><br><br>
+        <button onclick="flipCourse3()" class="flip"><span id="fCourse3">Course 3</span></button><br><br>
+    </div>
+</body>
+<script src="../js/script1.js"></script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!-- Synchronize -->
+            <div class="logo">
+                <a id="a0" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="#">Synchronize</a>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <a class="navbutton" id="a1" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="index.html" target="_blank">Home</a>
+                <a class="navbutton" id="a2" onmouseover="changeColor(id)" onmouseout="restoreColor(id)"  href="achievements.html" target="_blank">Achievements</a>
+                <a class="navbutton" id="a3" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="">Skills</a>
+                <a class="navbutton" id="a4" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="contact.html" target="_blank">Contact</a>
+                <a class="navbutton" id="a5" onmouseover="changeColor(id)" onmouseout="restoreColor(id)" href="education.html" target="_blank">Education</a>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1 id="skills-heading">Add my skills to the table:</h1>
+    <form onsubmit="getData(); return false;">
+        <br>
+        <label for="i1">Name: </label>
+        <input required type="text" name="name" placeholder="Your name..." id="iName"><br><br>
+
+        <label for="i2">Skill: </label>
+        <input required type="text" name="skill" placeholder="skill..." id="iSkill"><br><br>
+
+        <label for="i3">Level: </label>
+        <select required name="level" id="iLevel">
+            <option value="Proficient">Proficient</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Beginner">Beginner</option>
+        </select><br><br>
+        <button type="submit" name="submit">Submit</button>
+        <br><br>
+    </form>
+    <p class="makeblack" id="headings"><br>&nbsp &nbsp Name &nbsp &nbsp &nbsp Skills &nbsp &nbsp &nbsp Level</p>
+    <p class="makeblack"><span id="output"></span></p>
+
+    <div class="data">
+        <br>
+    </div>
+</body>
+<script src="../js/script1.js"></script>
+</html>

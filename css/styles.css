@@ -1,0 +1,443 @@
+/* All */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.wrapper
+{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Navigation bar */
+header
+{
+    height: 100px;
+    background: #262626;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+}
+
+/* ABHAY PATIL */
+.logo
+{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+/* Home, Skills, Contact etc.. */
+nav
+{
+    float: right;
+    line-height: 100px;
+}
+
+nav a
+{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+}
+
+/* Banner */
+.banner
+{
+    width: 100%;
+    height: 350px;
+    position: fixed;
+    top: 100px;
+    background-image: url(../img/banner6.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner h2
+{
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Horizontal Line */
+hr
+{
+    width: 100%;
+    border-top: 10px solid black;
+}
+
+/* Content bg color */
+.bluegrey
+{
+    background: #3d3653;
+}
+
+.content
+{
+    color: #fff;
+    width: 100%;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 450px;
+    /* background: #ec7c20; */
+    /* background: #3d3653; */
+    background: #ef123d;
+    height: 1860px;
+}
+
+.content h2
+{
+    letter-spacing: 1px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/* Image sector bg color */
+.image-sector
+{
+    background: #ef123d;
+    /* overflow: hidden; */
+}
+
+/*
+.big img
+{
+    width: 60%;
+    height: 20em;
+    background-size: cover;
+    border-radius: 100%;
+}
+*/
+
+/* Image slider */
+.slideshow
+{
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.middle
+{
+    position: absolute;
+    top: 40em;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slide-nav
+{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+/* Small white bars at the bottom of image slider */
+.bar
+{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.bar:hover
+{
+    background: #fff;   
+}
+
+input[name="r"]
+{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides
+{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+/* Transition speed */
+.slide
+{
+    width: 25%;
+    transition: 0.6s;
+}
+
+.slide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1
+{
+    margin-left: 0;
+}
+#r2:checked ~ .s1
+{
+    margin-left: -25%;
+}
+#r3:checked ~ .s1
+{
+    margin-left: -50%;
+}
+#r4:checked ~ .s1
+{
+    margin-left: -75%;
+}
+
+/* Set of 5 images that cycle on-click */
+.imgs2
+{
+    margin-top: 530px;
+    height: 600px;
+    background: #000000;
+}
+
+/* Stark */
+.flag1
+{
+    margin-left: 29em;
+    width: 600px;
+    height: 400px;
+    background: url('../img/stark.jpg') no-repeat;
+}
+
+/* Targaryen */
+.flag2
+{
+    width: 600px;
+    height: 400px;
+    background: url('../img/targaryen.jpg') no-repeat;
+}
+
+/* Lannister */
+.flag3
+{
+    width: 600px;
+    height: 400px;
+    background: url('../img/lannister.jpg') no-repeat;
+}
+
+/* Baratheon */
+.flag4
+{
+    width: 600px;
+    height: 400px;
+    background: url('../img/baratheon.jpg') no-repeat;
+}
+
+/* Tyrell */
+.flag5
+{
+    width: 600px;
+    height: 336px;
+    background: url('../img/tyrell.jpg') no-repeat;
+}
+
+/* Links to youtube and netflix */
+.links
+{
+    background: #2a9d8f;
+    /* text-align: left; */
+}
+
+.links img
+{
+    border-radius: 100%;
+    padding: 10px;
+}
+
+a
+{
+    font-size: 1.5em;
+}
+
+/* div table */
+.table
+{
+    background: chartreuse;
+    margin-top: 0px;
+}
+
+/* Greeting table with merged cells */
+#greet
+{
+    background: #aacc00;
+    margin-left: 39em;
+    align-content: center;
+    border: 4px solid black;
+    padding: 1em;
+}
+
+th, td
+{
+    border: 3px solid black;
+    padding: 1em;
+}
+
+/* Skills table */
+table
+{
+    margin-left: 38%;
+}
+
+.box td, th
+{
+    color: #fff;
+    border: 3px solid white;
+    width: 100px;
+    height: 40px;
+}
+
+.footer
+{
+    /* background: #49a078; */
+    background: black;
+}
+
+ul.a
+{
+    font-size: 1.6em;
+    background:#ffd60a;
+}
+
+h1
+{
+    font-size: 3em;
+}
+
+/* Achievements tab */
+body.achievements
+{
+    background:#aacc00;
+}
+
+#skills-heading
+{
+    /* margin-top: 2%; */
+    line-height: 250%;
+    background: darkcyan;
+}
+
+label
+{
+    font-size: 1.2em;
+}
+
+form
+{
+    text-align: center;
+    /* margin-left: 40%; */
+    background: darkorange;
+}
+
+input
+{
+    cursor: pointer;
+    /* border-radius: 5%; */
+    background: #fff;
+    padding: 6px 15px;
+    box-sizing: border-box  ;
+}
+
+input:focus
+{
+    background: #dddddd;
+}
+
+button
+{
+    cursor: pointer;
+    padding: 6px 15px;
+}
+
+.makeblack
+{
+    /* font-size: 2em; */
+    color: #fff;
+    background: #000;
+}
+
+#headings
+{
+    font-size: 2em;
+}
+
+.data
+{
+    background: #000;
+    height: 25em;
+}
+
+#blackbody
+{
+    background: #000;
+    background-image: url('../img/education2.jpg');
+}
+
+#edu
+{
+    color: white;
+}
+
+.cards
+{
+    font-size: 2.1em;
+}
+
+.flip
+{
+    background: white;
+    /* border-radius: 10%; */
+    font-size: 1em;
+}
+
+.flip:hover
+{
+    background: #ef123d;
+}
+
+.cont
+{
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.elder-scrolls
+{
+    background-image: url('../img/skyrim.jpg');
+}
